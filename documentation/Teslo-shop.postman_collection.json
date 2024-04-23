@@ -1,0 +1,131 @@
+{
+	"info": {
+		"_postman_id": "49ce1923-0c51-498a-b057-4b5c8b903151",
+		"name": "Teslo-shop",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "14790662"
+	},
+	"item": [
+		{
+			"name": "Create Product",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\": \"Fernando's shirt2\",\r\n    \"sizes\": [\"SM\", \"M\", \"L\"],\r\n    \"gender\": \"men\",\r\n    \"price\": 151.99\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{url_base}}/api/products",
+					"host": [
+						"{{url_base}}"
+					],
+					"path": [
+						"api",
+						"products"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Read All",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{url_base}}/api/products?limit=10&offset=1",
+					"host": [
+						"{{url_base}}"
+					],
+					"path": [
+						"api",
+						"products"
+					],
+					"query": [
+						{
+							"key": "limit",
+							"value": "10"
+						},
+						{
+							"key": "offset",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Read by",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{url_base}}/api/products/9d7a24fc-d8f3-43aa-aa1f-83b95771d052",
+					"host": [
+						"{{url_base}}"
+					],
+					"path": [
+						"api",
+						"products",
+						"9d7a24fc-d8f3-43aa-aa1f-83b95771d052"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete by id",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "{{url_base}}/api/products/8d9d0bb8-5eb1-4234-b7f7-74590e9ffe52",
+					"host": [
+						"{{url_base}}"
+					],
+					"path": [
+						"api",
+						"products",
+						"8d9d0bb8-5eb1-4234-b7f7-74590e9ffe52"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update by id",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"price\": 200.99,\r\n    \"title\": \"Fernando's shirt1\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{url_base}}/api/products/70a70e09-55a7-4d86-9ece-a546236fc40b",
+					"host": [
+						"{{url_base}}"
+					],
+					"path": [
+						"api",
+						"products",
+						"70a70e09-55a7-4d86-9ece-a546236fc40b"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
