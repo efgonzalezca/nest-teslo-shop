@@ -13,7 +13,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"title\": \"Fernando's shirt2\",\r\n    \"sizes\": [\"SM\", \"M\", \"L\"],\r\n    \"gender\": \"men\",\r\n    \"price\": 151.99\r\n}",
+					"raw": "{\r\n    \"title\": \"Fernando's shirt51\",\r\n    \"sizes\": [\"SM\", \"M\", \"L\"],\r\n    \"gender\": \"men\",\r\n    \"price\": 151.99,\r\n    \"images\": [\r\n        \"http://image1.jpg\",\r\n        \"http://image2.jpg\"\r\n    ]\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -67,14 +67,14 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "{{url_base}}/api/products/9d7a24fc-d8f3-43aa-aa1f-83b95771d052",
+					"raw": "{{url_base}}/api/products/7822e9cb-8357-434d-ac5d-022f54a70df0",
 					"host": [
 						"{{url_base}}"
 					],
 					"path": [
 						"api",
 						"products",
-						"9d7a24fc-d8f3-43aa-aa1f-83b95771d052"
+						"7822e9cb-8357-434d-ac5d-022f54a70df0"
 					]
 				}
 			},
@@ -86,14 +86,14 @@
 				"method": "DELETE",
 				"header": [],
 				"url": {
-					"raw": "{{url_base}}/api/products/8d9d0bb8-5eb1-4234-b7f7-74590e9ffe52",
+					"raw": "{{url_base}}/api/products/7822e9cb-8357-434d-ac5d-022f54a70df0",
 					"host": [
 						"{{url_base}}"
 					],
 					"path": [
 						"api",
 						"products",
-						"8d9d0bb8-5eb1-4234-b7f7-74590e9ffe52"
+						"7822e9cb-8357-434d-ac5d-022f54a70df0"
 					]
 				}
 			},
@@ -106,7 +106,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"price\": 200.99,\r\n    \"title\": \"Fernando's shirt1\"\r\n}",
+					"raw": "{\r\n    \"price\": 200.99,\r\n    \"images\": [\r\n        \"https://image1.jpg\"\r\n    ]\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -114,14 +114,32 @@
 					}
 				},
 				"url": {
-					"raw": "{{url_base}}/api/products/70a70e09-55a7-4d86-9ece-a546236fc40b",
+					"raw": "{{url_base}}/api/products/7822e9cb-8357-434d-ac5d-022f54a70df0",
 					"host": [
 						"{{url_base}}"
 					],
 					"path": [
 						"api",
 						"products",
-						"70a70e09-55a7-4d86-9ece-a546236fc40b"
+						"7822e9cb-8357-434d-ac5d-022f54a70df0"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Seed",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{url_base}}/api/seed",
+					"host": [
+						"{{url_base}}"
+					],
+					"path": [
+						"api",
+						"seed"
 					]
 				}
 			},
