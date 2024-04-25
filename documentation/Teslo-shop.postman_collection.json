@@ -144,6 +144,55 @@
 				}
 			},
 			"response": []
+		},
+		{
+			"name": "Upload Product",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "file",
+							"type": "file",
+							"src": "/C:/Users/daren/Downloads/code_header2.png"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{url_base}}/api/files/product",
+					"host": [
+						"{{url_base}}"
+					],
+					"path": [
+						"api",
+						"files",
+						"product"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Product image by name",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{url_base}}/api/files/product/7652410-00-A_1_2000.jpg",
+					"host": [
+						"{{url_base}}"
+					],
+					"path": [
+						"api",
+						"files",
+						"product",
+						"7652410-00-A_1_2000.jpg"
+					]
+				}
+			},
+			"response": []
 		}
 	]
 }

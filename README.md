@@ -15,11 +15,11 @@ yarn install
 ```bash
 docker-compose up -d
 ```
-6. Ejecutar SEED
-```
-http://{url}/api/seed
-```
-7. Levantar desarrollo
+6. Levantar desarrollo
 ```bash
 yarn start:dev
+```
+7. Ejecutar SEED
+```
+http://{url}/api/seed
 ```
