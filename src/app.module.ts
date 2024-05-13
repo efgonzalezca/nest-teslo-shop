@@ -8,6 +8,7 @@ import { FilesModule } from './files/files.module';
 import { CommonModule } from './common/common.module';
 import { EnvConfiguration } from './config/env.config';
 import { ProductsModule } from './products/products.module';
+import { MessagesWsModule } from './messages-ws/messages-ws.module';
 
 @Module({
   imports: [
@@ -28,7 +29,8 @@ import { ProductsModule } from './products/products.module';
     CommonModule,
     SeedModule,
     FilesModule,
-    AuthModule
+    AuthModule,
+    MessagesWsModule
   ],
   controllers: [],
   providers: [],
